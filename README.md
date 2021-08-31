@@ -12,3 +12,5 @@ https://cshepscorp.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Christy Sheppard
+
+### ©️2019 Run Buddy, Inc.
