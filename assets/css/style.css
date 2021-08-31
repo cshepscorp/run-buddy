@@ -42,13 +42,17 @@ header a {
 header nav {
     margin: 7px;
 }
-header nav ul li {
-    display: inline;
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.55vw;
 }
 /* Hero style starts */
 .hero {
@@ -125,8 +129,6 @@ header nav ul li a {
 /* what we do section */
 .intro {
     text-align: center;
-}
-.intro h2 {
 }
 .intro p {
     line-height: 1.7;
