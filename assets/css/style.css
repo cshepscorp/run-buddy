@@ -1,13 +1,27 @@
+/* global styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Helvetica, Arial, sans-serif;
     color: #39a6b2;
 }
+h2 {
+    margin: 0;
+    font-size: 30px;
+    font-style: italic;
+    color: #fce138;
+}
+h3 {
+    margin: 0;
+    font-size: 24px;
+}
+section {
+    padding: 60px;
+}
+/* header styles */
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
@@ -35,10 +49,6 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 22px;
 }
-section {
-    padding: 60px;
-}
-
 /* Hero style starts */
 .hero {
     background-image: url("../images/hero-bg.jpeg");
@@ -46,6 +56,16 @@ section {
     background-size: cover;
     background-position: center;
     position: relative;
+}
+.hero-greeting {
+    color: #FFF;
+    padding: 50px;
+    width: 500px;
+    font-size: 14px;
+    text-align: right;
+    position:absolute;
+    top: 40px;
+    left: 140px;
 }
 .hero-form {
     background-color: #fce138;
@@ -57,10 +77,6 @@ section {
     position:absolute;
     bottom: 120px;
     right: 140px;
-}
-h3 {
-    margin: 0;
-    font-size: 24px;
 }
 .hero-form p {
     margin: 5px 0 15px 0;
