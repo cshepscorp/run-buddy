@@ -2,30 +2,30 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
   
-  body {
+body {
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
-  }
+}
   
   
-  /* HEADER / NAV BAR STYLES START */
+/* HEADER / NAV BAR STYLES START */
   
-  header {
+header {
     padding: 20px 35px;
     background-color: #39a6b2;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
+}
   
-  header h1 {
+header h1 {
     font-weight: bold;
     margin: 0;
     font-size: 36px;
     color: #fce138;
-  }
+}
   
   header a {
     text-decoration: none;
@@ -45,7 +45,7 @@
   }
   
   header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
   }
@@ -94,6 +94,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
   
   .hero-form {
@@ -119,7 +120,7 @@
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
-    line-height: 1.3;
+    line-height: 1.2;
     flex: 1 0 0;
     justify-content: center;
     flex-wrap: wrap;
@@ -166,7 +167,7 @@
   
   /* SECTION TITLE STYLES START */
   .section-title {
-    font-size: 55px;
+    font-size: 48px;
     border-bottom: 3px solid;
     color: #024e76;
     padding-bottom: 20px;
@@ -373,3 +374,22 @@
   .flex-row {
     display: flex;
   }
+
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
+@media screen and (max-width: 980px) {
+  /* applies to any screen smaller than 980px */
+    
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+     /* applies to any screen smaller than 768px */
+   
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width:575px) {
+  /* applies to any screen smaller than 575px */
+  
+}
