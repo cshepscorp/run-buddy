@@ -15,9 +15,16 @@ body {
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
+    background-image: url('../images/hero-bg.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
   
 header h1 {
@@ -30,7 +37,7 @@ header h1 {
   
   header a {
     text-decoration: none;
-    color: #fce138;
+    color: #fce138; 
   }
   
   header nav {
@@ -52,6 +59,13 @@ header h1 {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
+  header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
   /* HEADER / NAVBAR STYLES END */
   
   
@@ -91,7 +105,8 @@ header h1 {
   .hero {
     background-image: url('../images/hero-bg.jpeg');
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -149,6 +164,12 @@ header h1 {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px; 
+    background-color: rgba(255,255,255, 0.75);
+  }
+
+  .form-input:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
   }
   
   .hero-form label {
@@ -163,6 +184,11 @@ header h1 {
     font-size: 16px;
     border-radius: 10px;
   } 
+
+  .hero-form button:hover {
+    background-color: #39a6b2;  
+  }
+
   /* HERO STYLES END */
   
   
@@ -207,11 +233,14 @@ header h1 {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+  }
+  
+  .step:not(:last-child) {
+    border-bottom: 1px solid #39a6b2;
   }
   
   .step h3 {
@@ -349,6 +378,12 @@ header h1 {
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    background-color: rgba(255,255,255, 0.75);
+  }
+
+  .contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
   }
   
   .contact-form button {
@@ -360,6 +395,11 @@ header h1 {
     padding: 15px 0;
     font-size: 16px;
     border-radius: 10px;
+  }
+
+  .contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
   }
 
   .contact-form h3 {
@@ -385,6 +425,7 @@ header h1 {
     header {
       justify-content: center;
       padding-bottom: 0;
+      position: relative;
     }
     header h1 {
       width: 100%;
@@ -396,7 +437,7 @@ header h1 {
       justify-content: center;
     }
     header nav ul li a {
-      font-size: 20px;;
+      font-size: 20px;
     }
     footer h2, footer div {
       text-align: center;
